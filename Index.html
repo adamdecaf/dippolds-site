@@ -1,0 +1,79 @@
+---
+layout: default
+title: "Home - Michael Dippold"
+---
+
+	<!-- BEGINNING OF THE MAIN FOCUS AREA -->
+
+	<div class="focus">
+		<div class="focus-text">
+			<p >My name is Michael Dippold. I'm a web developer from Iowa, and I'm passionate about building a better web. To me that means beautiful, functional, and open. I also love thinking about design, UX, branding, and performance.</p>
+			<!-- <h3><a href="about.html">More about me</a></h3> UNCOMMENT WHEN READY TO DEPLOY ABOUT ME PAGE -->
+		</div>
+		<div class="focus-pic">
+			<img src="images/michael.png"/>
+		</div>
+	</div>
+
+<!-- BEGINNING OF STUFF BELOW THE FOCUS AREA -->
+
+<h1 class="fp_title_work">My Work</h1>
+<div class="fp_work">
+
+	<div class="fp_box1">
+		<img src="http://placekitten.com/365/360">
+		<a href="" class="invis">
+			My Personal Site
+		</a>
+	</div>
+
+	<div class="fp_box2">
+		<img src="http://placekitten.com/365/361">
+		<a href="" class="invis">
+			Darwin Week
+		</a>
+	</div>
+
+	<div class="fp_box3">
+		<img src="http://placekitten.com/361/361">
+		<a href="" class="invis">
+			Coming Soon
+		</a>
+	</div>
+
+	<div class="fp_box4">
+		<img src="http://placekitten.com/365/360">
+		<a href="" class="invis">
+			Coming Soon
+		</a>
+	</div>
+
+</div>
+
+<!-- BEGIN BLAG SECTION-->
+
+<h1 class="fp_title_blog">Blog Posts</h1>
+<div class="fp_blog group">
+		{% for post in site.posts limit: 2 %}
+	<div class="fp_blogbox">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<p>{{ post.content | truncatewords:50 }}</p>
+	<h4> {{ post.date | date: "%B %d, %Y" }}</h4>
+	</div>	
+		{% endfor %}
+</div>
+
+<!-- BEGIN ABOUT ME SECTION-->
+
+<h1 class="fp_title_about">About Me</h1>
+<div class="fp_about">
+
+	<p>I'm a front-end web developer located in Iowa. My work is focused on HTML/CSS and JavaScript, but I dabble in some PHP just to mix things up. I'm also passionate about design/UX and creating the best experience possible. I do my best to stay current in web trends and best practices - especially in terms of responsive design, performance optimization, and clean/semantic markup.</p>
+
+	<img src="/images/hipster.png"/>
+	
+	<br>
+
+</div>
+
+

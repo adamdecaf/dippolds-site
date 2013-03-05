@@ -1,0 +1,628 @@
+/* defaults */
+
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+	max-width: 1600px;
+	margin: 0 auto 0 auto;
+}
+
+/* variables*/
+
+$blue: #265DCA;
+
+/* CLEARFIX CLASS */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* typorgraphy */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+*{
+	font-family: 'Source Sans Pro', sans-serif;	
+}
+
+
+/* nav */
+
+.nav {
+	width: 100%;
+	background-color: $blue;
+	li{
+		float: right;
+		list-style-type: none;
+		margin-right: 1em;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 1.7em;
+		display: block;
+		padding: 0.4em;
+		@media screen and (max-width: 700px) {
+			font-size: 1.4em;
+	  	}
+	}
+}
+
+.focus {
+	height: 28em;
+	position: relative;
+	background-color: $blue;
+		@media screen and (max-width: 700px) {
+			height: 32em;
+	  	}
+}
+
+.focus-text {
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	left: 10%;
+	bottom: 20%;
+		@media screen and (max-width: 960px) {
+			bottom: 30%;
+			width: 50%;	
+	  	}
+	  	@media screen and (max-width: 700px) {
+			width: 80%;
+			height: 50%;
+			left: 10%;
+			right: 10%;
+			bottom: 40%;
+	  	}
+	p {
+		color: white;
+		font-size: 1.7em;
+		font-weight: 300;
+			@media screen and (max-width: 960px) {
+				font-size: 1.5em
+	  		}
+	  		@media screen and (max-width: 375px) {
+				font-size: 1.3em;
+	  		}
+	}
+	h3{
+		padding: 10px 0 0 0;
+		font-size: 1.7em;
+		font-weight: 400;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.focus-pic {
+	position: absolute;
+	width: 40%;
+	height: 80%;
+	right: 10%;
+	bottom: 0;
+		@media screen and (max-width: 960px) {
+			width: 55%;
+			right: 5%;		
+	  	}
+		@media screen and (max-width: 700px) {
+			width: 68%;
+			left: 16%;
+			right: 16%;
+	  	}
+	  	@media screen and (max-width: 375px) {
+			font-size: 1.3em;
+			width: 90%;
+			left: 5%;
+			right: 5%;
+	  	}
+	img {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+	}
+}
+
+.fp_title_work {
+		color: $blue;
+		font-weight: 300;
+		font-size: 3em;
+		margin: 0.75em 0 0 5%;
+}
+
+.fp_title_blog {
+		color: $blue;
+		font-weight: 300;
+		font-size: 3em;
+		margin: 25% 0 0 5%;
+}
+
+.fp_title_about {
+		color: $blue;
+		font-weight: 300;
+		font-size: 3em;
+		margin: 0.75em 0 0 5%;
+}
+
+.fp_work {
+	width: 90%;
+	margin: 1.5em auto 0 auto;	
+	a {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 45%;
+		background-color: $blue;
+		color: white;
+		font-weight: 400;
+		font-size: 1.4em;
+		text-decoration: none;
+		text-align: center; 
+		z-index: 999;
+		opacity: 0;
+		 @media screen and (max-width: 450px) {
+  	 		font-size: 1em;
+		 }
+	}
+	a:hover {
+		opacity: 1;
+		-webkit-transition: opacity 0.3s ease-in-out;
+  		-moz-transition: opacity 0.3s ease-in-out;
+  		-o-transition: opacity 0.3s ease-in-out;
+  		transition: opacity 0.3s ease-in-out;
+	}
+}
+
+.fp_box1 {
+margin-right: 2%;
+width: 23.5%;
+float: left;
+padding-bottom: 23%;
+overflow: hidden;
+position: relative;
+z-index: 100;
+  	 @media screen and (max-width: 860px) {
+  	 	width: 47.5%;
+  	 	padding-bottom:47%;
+	 }
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.fp_box2 {
+margin-right: 2%;
+width: 23.5%;
+padding-bottom: 50%;
+float: left;
+padding-bottom: 23%;
+overflow: hidden;
+position: relative;
+z-index: 100;
+  	 @media screen and (max-width: 860px) {
+  	 	width: 47.5%;
+  	 	padding-bottom:47%;
+	 }
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index:9999;
+		z-index: 1;
+	}
+}
+
+.fp_box3 {
+margin-right: 2%;
+width: 23.5%;
+padding-bottom: 50%;
+float: left;
+padding-bottom: 23%;
+overflow: hidden;
+position: relative;
+z-index: 100;
+  	 @media screen and (max-width: 860px) {
+  	 	width: 47.5%;
+  	 	padding-bottom:47%;
+  	 	margin-top: 2%;
+	 }
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index:9999;
+		z-index: 1;
+	}
+}
+// MODEL AFTER IF/WHEN YOU ADD A FOURTH BOX
+.fp_box4 {
+width: 23.5%;
+padding-bottom: 50%;
+float: left;
+padding-bottom: 23%;
+overflow: hidden;
+position: relative;
+z-index: 100;
+  	 @media screen and (max-width: 860px) {
+  	 	width: 47.5%;
+  	 	padding-bottom:47%;
+  	 	margin-top: 2%;
+	 }
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.fp_blog {
+	width: 90%;
+	height: 15em;
+	margin: 0 auto 0 auto;
+	h2 {
+		font-size: 1.5em;
+		font-weight: 400;
+		a {
+			text-decoration: none;
+			color: $blue;
+		}
+	}
+	p {
+		font-size: 1.4em;
+		font-weight: 300;
+		margin-top: 0.25em;
+		@media screen and (max-width: 420px) {
+			font-size: 1.1em;
+	 	}
+	}
+	h4 {
+		font-weight: 400;
+		font-size: 1.3em;
+		margin-top: 0.5em;
+	}
+}
+
+.fp_blogbox {
+	width: 50%;
+	float: left;
+	padding-right: 2em;
+	margin-top: 1em;
+		@media screen and (max-width: 960px) {
+		width: 100%;	
+	  	}
+}
+
+/* CSS FOR ABOUT ME ON FRONT PAGE */
+
+.fp_about {
+	width: 90%;
+	margin: 1em auto 2em auto;
+	position: relative;
+		  	@media screen and (max-width: 620px) {
+			position: static;
+			}
+	img {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		width: 25%;
+			@media screen and (max-width: 960px) {
+			width: 100%;	
+			width: 28%;
+	  		}
+	  		@media screen and (max-width: 620px) {
+			position: static;
+			width: 70%;
+			margin-right: auto;
+			margin-left: 12%;
+			}
+		}		
+	p {
+		float: right; 
+		width: 68%;
+		margin: 0 1em 0 0;
+		font-size: 1.4em;
+		font-weight: 300;
+		padding-top: 5%;
+			@media screen and (min-width: 1260px) {
+			font-size: 1.7em;	
+			}
+			@media screen and (max-width: 960px) {
+			font-size: 1.2em;	
+			width: 65%;
+			}
+			@media screen and (max-width: 760px) {
+			padding-top: 0;
+			}
+			@media screen and (max-width: 620px) {
+			width: 100%;
+			margin: auto;
+			padding-bottom: 1em;
+			}
+
+		}
+	}
+
+
+
+/* post preview page */
+
+.posts {
+	width: 60%;
+	margin: 2em auto 1em auto;
+	padding: 0.5em 0.5em;
+	display: block;
+		@media screen and (max-width: 960px) {
+			width: 90%;	
+	  	}
+	a{
+		color: $blue;
+		font-size: 1.1em;
+		font-weight: 400;
+		text-decoration: none;
+	}
+	h1 {
+		margin: 0.5em 0 0.5em 0;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+	p{
+		color: black;
+		margin: 0.5em 0 0.5em 0;
+		font-size:1.3em;
+		font-weight: 300;
+		@media screen and (max-width: 420px) {
+			font-size: 1.1em;
+	 	}
+	}
+	h3 {
+		margin-bottom: 0.8em;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	h4 {
+  	font-weight: 300;
+  	font-size: 2.2em; 
+  	margin-bottom: 0.3em;
+  		@media screen and (max-width: 420px) {
+			font-size: 1.5em;
+	 	}
+  	}
+}
+
+a:hover.post-preview{
+	background-color: #ACC4EF;
+}
+
+/* contact page style */
+
+.contact-right {
+	float: right;
+	width: 35%;
+	margin: 30px 5% 0 0;
+	p {
+		font-size: 1.8em;
+		font-weight: 300;
+		color: white;
+		@media screen and (max-width: 1000px) {
+			font-size: 1.5em;
+	  	}
+	}
+	@media screen and (max-width: 750px) {
+			display: none;
+	  }
+}
+
+/* Imported form styling (h/t to CSS Tricks) */
+
+#contact-left {
+	width: 50%;
+	float: left;
+	margin: 10px 0 0 5%;
+	@media screen and (max-width: 750px) {
+			width: 85%;
+			margin: 10px 0 0 7.5%;
+	 }
+}
+
+#contact-left input, #contact-left textarea {
+	padding: 5px;
+	width: 100%;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-left textarea {
+	height: 200px;
+}
+
+#contact-left textarea:focus, #contact-left input:focus {
+	border: 2px solid #900;
+}
+
+#contact-left input.submit-button {
+	width: 150px;
+	float: right;
+}
+
+label {
+	font-size: 2.4em;
+	font-weight: 300;
+	color: white;
+	@media screen and (max-width: 400px) {
+			font-size: 2em;
+	 }
+}
+
+/* projects page styles */
+
+.grid-box {
+	display: inline-block;
+	height: 350px;
+	width: 350px;
+	margin: 1em 0 0 1em;
+	position: Relative;
+	overflow: hidden;
+	p {
+		z-index: 100;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	img {
+		z-index: 900;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.grid-box:hover {
+		background-color: $blue;
+		display: inline-block;
+		height: 350px;
+		width: 350px;
+		margin: 1em 0 0 1em;
+		position: Relative;
+		overflow: hidden;
+		img {
+			z-index: -10;
+		}
+	}
+
+.project-wrap {
+	width: 90%;
+	margin: 0 auto 0 auto;
+}
+
+/* ABOUT PAGE STYLES*/
+
+.a_column1 {
+	width: 30%;
+	float: left;
+	margin: 2em 0 0 7%;
+	img {
+		width: 90%;
+		margin: 0 auto 0 auto;
+	}
+}
+
+.a_column2 {
+	width: 56%;
+	float: right;
+	margin: 3em 7% 0 0;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+/* STYLES FOR INDIVIDUAL BLOG POSTS */
+
+.post-content {
+  width: 60%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em 0.5em;
+  display: block; 
+  		@media screen and (max-width: 960px) {
+			width: 90%;	
+	  	}
+  a {
+    color: #265dca;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+  h1 {
+    margin: 0.5em 0 0.5em 0; 
+	font-weight: 400;
+	font-size: 1.6em; 
+}
+
+  p {
+    color: black;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.3em;
+    font-weight: 300; 
+    	@media screen and (max-width: 420px) {
+			font-size: 1.1em;
+	 	}
+}
+
+   h3 {
+  	margin-bottom: 0.8em;
+  	font-size: 1.5em;
+  	font-weight: 300; 
+  }
+
+  h4 {
+  	font-weight: 300;
+  	font-size: 2.2em; 
+  	margin-bottom: 0.3em;
+  	  	@media screen and (max-width: 420px) {
+			font-size: 1.5em;
+	 	}
+  }
+
+  img {
+	width: 100%;
+	margin: 0.5em auto 0.5em auto;}
+  ul, ol { margin: 1em 0 1em 3em;}
+  li { font-size: 1.2em; margin-top: 0.4em; }
+  }
+
+  /* THANK YOU PAGE STYLING */
+
+  .thanks-wrap {
+  	width: 60%;
+  	text-align: center;
+  	margin: 20% auto 0 auto;
+  	  	@media screen and (max-width: 600px) {
+			width: 85%;
+			margin: 20% auto 0 auto;
+	 	}
+	 	@media screen and (max-width: 600px) {
+			width: 95%;
+			margin: 20% auto 0 auto;
+	 	}
+  	h2 {
+  		color: $blue;
+  		font-weight: 400;
+  		font-size: 2em;
+  		@media screen and (max-width: 600px) {
+			font-size: 1.6em;
+	 	}
+  	}
+  	a {
+  		display: block;
+  		padding: 0.5em;
+  		text-decoration: none;
+  		color: white;
+  		font-size: 1.4em;
+  		background-color: $blue;
+  		width: 60%;
+  		margin: 0.5em 0 0 20%;
+  		@media screen and (max-width: 600px) {
+			font-size: 1.1em;
+	 	}
+  	}
+  }

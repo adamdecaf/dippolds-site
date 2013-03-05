@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Blog Posts - Michael Dippold"
+---
+
+
+{% for post in site.posts %}
+<div class="posts">
+	<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+	<p>{{ post.content | truncatewords: 100 }}</p>
+</div>
+{% endfor %}
+
+ 

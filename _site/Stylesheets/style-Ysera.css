@@ -1,0 +1,416 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+/* defaults */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto 0 auto; }
+
+/* variables*/
+/* CLEARFIX CLASS */
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* typorgraphy */
+* {
+  font-family: "Source Sans Pro", sans-serif; }
+
+/* nav */
+.nav {
+  height: 4em;
+  width: 100%;
+  background-color: #265dca; }
+  .nav li {
+    float: right;
+    display: block;
+    padding: 0.8em 1.5em 0 0; }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7em; }
+
+.focus {
+  height: 28em;
+  position: relative;
+  background-color: #265dca; }
+  @media screen and (max-width: 700px) {
+    .focus {
+      height: 32em; } }
+
+.focus-text {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  left: 10%;
+  bottom: 20%; }
+  @media screen and (max-width: 960px) {
+    .focus-text {
+      bottom: 30%;
+      width: 50%; } }
+  @media screen and (max-width: 700px) {
+    .focus-text {
+      width: 80%;
+      height: 50%;
+      left: 10%;
+      right: 10%;
+      bottom: 35%; } }
+  .focus-text p {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 300; }
+    @media screen and (max-width: 960px) {
+      .focus-text p {
+        font-size: 1.5em; } }
+  .focus-text h3 {
+    padding: 10px 0 0 0;
+    font-size: 1.7em;
+    font-weight: 400; }
+  .focus-text a {
+    text-decoration: none;
+    color: white; }
+
+.focus-pic {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  right: 10%;
+  bottom: 0; }
+  @media screen and (max-width: 960px) {
+    .focus-pic {
+      width: 55%;
+      right: 5%; } }
+  @media screen and (max-width: 700px) {
+    .focus-pic {
+      width: 60%;
+      bottom: 0;
+      left: 20%;
+      right: 20%; } }
+  .focus-pic img {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+.fp_title_work {
+  color: #265dca;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.75em 0 0 5%; }
+
+.fp_title_blog {
+  color: #265dca;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 25% 0 0 5%; }
+
+.fp_title_about {
+  color: #265dca;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.75em 0 0 5%; }
+
+.fp_work {
+  width: 90%;
+  margin: 1.5em auto 0 auto; }
+  .fp_work a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 45%;
+    background-color: #265dca;
+    color: white;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+    opacity: 0; }
+  .fp_work a:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out; }
+
+.fp_box1 {
+  margin-right: 2%;
+  width: 23.5%;
+  float: left;
+  padding-bottom: 23%;
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
+  .fp_box1 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+
+.fp_box2 {
+  margin-right: 2%;
+  width: 23.5%;
+  padding-bottom: 50%;
+  float: left;
+  padding-bottom: 23%;
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
+  .fp_box2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    z-index: 1; }
+
+.fp_box3 {
+  margin-right: 2%;
+  width: 23.5%;
+  padding-bottom: 50%;
+  float: left;
+  padding-bottom: 23%;
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
+  .fp_box3 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    z-index: 1; }
+
+.fp_box4 {
+  width: 23.5%;
+  padding-bottom: 50%;
+  float: left;
+  padding-bottom: 23%;
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
+  .fp_box4 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+
+.fp_blog {
+  width: 90%;
+  height: 15em;
+  margin: 0 auto 0 auto; }
+  .fp_blog h2 {
+    font-size: 1.5em;
+    font-weight: 400; }
+    .fp_blog h2 a {
+      text-decoration: none;
+      color: #265dca; }
+  .fp_blog p {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 0.25em; }
+  .fp_blog h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-top: 0.5em; }
+
+.fp_blogbox {
+  width: 50%;
+  float: left;
+  padding-right: 2em;
+  margin-top: 1em; }
+  @media screen and (max-width: 960px) {
+    .fp_blogbox {
+      width: 100%; } }
+
+/* CSS FOR ABOUT ME ON FRONT PAGE */
+.fp_about {
+  width: 90%;
+  margin: 1em auto 2em auto;
+  padding-bottom: 20%;
+  position: relative; }
+  .fp_about img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 25%; }
+    @media screen and (max-width: 960px) {
+      .fp_about img {
+        width: 100%;
+        width: 28%; } }
+  .fp_about p {
+    float: right;
+    width: 68%;
+    margin: 0 1em 0 0;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding-top: 5%; }
+    @media screen and (min-width: 1260px) {
+      .fp_about p {
+        font-size: 1.7em; } }
+    @media screen and (max-width: 960px) {
+      .fp_about p {
+        font-size: 1.2em;
+        width: 65%; } }
+
+/* post preview page */
+.posts {
+  width: 75%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em 0.5em;
+  display: block; }
+  .posts a {
+    color: #265dca;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none; }
+  .posts h1 {
+    margin: 0.5em 0 0.5em 0;
+    font-weight: 400;
+    font-size: 1.2em; }
+  .posts p {
+    color: black;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.3em;
+    font-weight: 300; }
+  .posts h3 {
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .posts h4 {
+    font-weight: 300;
+    font-size: 2.2em;
+    margin-bottom: 0.3em; }
+
+a:hover.post-preview {
+  background-color: #ACC4EF; }
+
+/* contact page style */
+.contact-right {
+  float: right;
+  width: 35%;
+  margin: 30px 5% 0 0; }
+  .contact-right p {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white; }
+
+/* Imported form styling (h/t to CSS Tricks) */
+#contact-left {
+  width: 50%;
+  float: left;
+  margin: 10px 0 0 5%; }
+
+#contact-left input, #contact-left textarea {
+  padding: 5px;
+  width: 100%;
+  font-size: 1.4em;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid #cccccc; }
+
+#contact-left textarea {
+  height: 200px; }
+
+#contact-left textarea:focus, #contact-left input:focus {
+  border: 2px solid #990000; }
+
+#contact-left input.submit-button {
+  width: 150px;
+  float: right; }
+
+label {
+  font-size: 2.4em;
+  font-weight: 300;
+  color: white; }
+
+/* projects page styles */
+.grid-box {
+  display: inline-block;
+  height: 350px;
+  width: 350px;
+  margin: 1em 0 0 1em;
+  position: Relative;
+  overflow: hidden; }
+  .grid-box p {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .grid-box img {
+    z-index: 900;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.grid-box:hover {
+  background-color: #265dca;
+  display: inline-block;
+  height: 350px;
+  width: 350px;
+  margin: 1em 0 0 1em;
+  position: Relative;
+  overflow: hidden; }
+  .grid-box:hover img {
+    z-index: -10; }
+
+.project-wrap {
+  width: 90%;
+  margin: 0 auto 0 auto; }
+
+/* ABOUT PAGE STYLES*/
+.a_column1 {
+  width: 30%;
+  float: left;
+  margin: 2em 0 0 7%; }
+  .a_column1 img {
+    width: 90%;
+    margin: 0 auto 0 auto; }
+
+.a_column2 {
+  width: 56%;
+  float: right;
+  margin: 3em 7% 0 0;
+  font-weight: 300;
+  font-size: 1.5em; }
+
+/* STYLES FOR INDIVIDUAL BLOG POSTS */
+.post-content {
+  width: 75%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em 0.5em;
+  display: block; }
+  .post-content a {
+    color: #265dca;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none; }
+  .post-content h1 {
+    margin: 0.5em 0 0.5em 0;
+    font-weight: 400;
+    font-size: 1.6em; }
+  .post-content p {
+    color: black;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.3em;
+    font-weight: 300; }
+  .post-content h3 {
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .post-content h4 {
+    font-weight: 300;
+    font-size: 2.2em;
+    margin-bottom: 0.3em; }
+  .post-content img {
+    width: 70%;
+    margin: 0.5em auto 0.5em auto; }

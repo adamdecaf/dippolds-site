@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/Stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<body>
+
+<div class="nav">
+
+			<!-- 
+			<ul>
+			<li><a href="../contact.html">Contact</a></li>
+			<li><a href="../blog.html">Blog</a></li>
+			<li><a href="http://michaeldippold.com/projects.html">Projects</a></li>
+			<li><a href="http://michaeldippold.com/about.html">About</a></li>
+			<li><a href="../index.html">Home</a></li>
+			</ul>
+			<div class="spacer" style="clear: both;"></div>
+			-->
+			<ul>
+			<li><a href="http://michaeldippold.com/contact.html">Contact</a></li>
+			<li><a href="http://michaeldippold.com/blog.html">Blog</a></li>
+			<!--
+			<li><a href="http://michaeldippold.com/projects.html">Projects</a></li>
+			<li><a href="http://michaeldippold.com/about.html">About</a></li>
+			-->
+			<li><a href="http://michaeldippold.com">Home</a></li>
+			</ul>
+			<div class="spacer" style="clear: both;"></div>
+	
+			
+</div>
+
+{{content}}
+
+</body>
+
+</html>

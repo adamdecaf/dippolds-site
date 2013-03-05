@@ -1,0 +1,6 @@
+site_name: 'Michael Dippold'
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /articles/:title/
+auto: true
